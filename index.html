@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151715"><meta name="description" content="KOKORO — 120 jours pour revenir à l’essentiel.">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>KOKORO — Mon cahier noir</title>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="mark">黒</div><div><div class="brand">KOKORO</div><div class="subtitle">MON CAHIER NOIR</div></div><button class="iconbtn" id="themeBtn" aria-label="Changer le thème">◐</button></header>
+<main id="main">
+<section class="hero"><div class="eyebrow">MON VOYAGE · 120 JOURS</div><h1>Revenir à<br><em>l’essentiel.</em></h1><p>Quelques minutes pour déposer, comprendre, clarifier et avancer.</p><div class="progress-wrap"><div class="progress-label"><span>MON PARCOURS</span><strong id="progressText">0 / 120 jours</strong></div><div class="track"><div id="progressBar"></div></div></div></section>
+<section class="today card"><div class="section-kicker">LE RITUEL DU JOUR</div><div class="today-head"><div><div class="daylabel" id="dayLabel">JOUR 1 · MOIS 1</div><h2 id="phaseTitle">Décharger</h2></div><span class="enso">○</span></div><p class="prompt" id="prompt">Qu’est-ce qui occupe mon esprit en ce moment et que j’ai besoin de déposer ?</p><label for="entry">Mon cahier, sans filtre.</label><textarea id="entry" rows="5" placeholder="Écris librement. Il n’y a rien à réussir, rien à prouver…"></textarea><label for="intention">Mon intention (facultatif)</label><input id="intention" placeholder="Aujourd’hui, je choisis de…"><button class="primary" id="saveBtn">Enregistrer mon rituel <span>↗</span></button><p class="saved-note" id="savedNote" aria-live="polite"></p></section>
+<section class="section"><div class="section-heading"><div><div class="section-kicker">LE CHEMIN</div><h2>Quatre étapes.</h2></div><span class="muted">30 jours chacune</span></div><div class="phases">
+<button class="phase active" data-month="1"><span class="phase-num">01</span><span><b>Décharger</b><small>Faire de la place</small></span><span class="arrow">↗</span></button>
+<button class="phase" data-month="2"><span class="phase-num">02</span><span><b>Comprendre</b><small>Observer ses schémas</small></span><span class="arrow">↗</span></button>
+<button class="phase" data-month="3"><span class="phase-num">03</span><span><b>Clarifier</b><small>Choisir l’essentiel</small></span><span class="arrow">↗</span></button>
+<button class="phase" data-month="4"><span class="phase-num">04</span><span><b>Construire</b><small>Passer à l’action</small></span><span class="arrow">↗</span></button>
+</div></section>
+<section class="card review"><div class="section-kicker">PRENDRE DU RECUL</div><h2>Le chemin compte.</h2><p id="reviewText">Chaque note est un petit pas. Reviens ici pour voir ce que tu as déjà écrit.</p><button class="secondary" id="reviewBtn">Voir mes notes <span>→</span></button></section>
+<footer>Écrire, c’est déjà se donner de l’espace.<br><span>KOKORO · 心</span></footer>
+</main>
+<nav class="bottom-nav"><button class="navitem selected" data-tab="home"><span>⌂</span>Accueil</button><button class="navitem" data-tab="journal"><span>▤</span>Journal</button><button class="navitem" data-tab="review"><span>◷</span>Bilan</button><button class="navitem" data-tab="settings"><span>⚙</span>Réglages</button></nav>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
